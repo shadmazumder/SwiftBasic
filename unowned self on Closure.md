@@ -54,7 +54,7 @@ Excerpt From: Apple Inc. “The Swift Programming Language (Swift 4.0.3).” iBo
 ```
 
 ### Solution: Capture List
-Basically *Capture list* the set of rules between a class and it's closuer, which will define the relation among them to break the strong reference cycle. This set of rules is defined on closure defination. Lets see a closure example:
+Basically *Capture list* the set of rules between a class and it's closuer, which will define the relationship among them to break the strong reference cycle. This set of rules is defined on closure defination. Lets see a closure example:
 ```swift
 lazy var someClosure: (Int, String) -> String = {
     [unowned self, weak delegate = self.delegate!] (index: Int, stringToProcess: String) -> String in
