@@ -3,6 +3,8 @@
 The problem starts with strong ref cycle. Consider the following example:
 
 ```swift
+//: Playground - noun: a place where people can play
+
 import UIKit
 
 class Office{
@@ -52,4 +54,55 @@ Excerpt From: Apple Inc. “The Swift Programming Language (Swift 4.0.3).” iBo
 ```
 
 ### Solution: Capture List
+Basically *Capture list* the set of rules between a class and it's closuer, which will define the relation among them to break the strong reference cycle. This set of rules is defined on closure defination. Lets see a closure example:
+```swift
+lazy var someClosure: (Int, String) -> String = {
+    [unowned self, weak delegate = self.delegate!] (index: Int, stringToProcess: String) -> String in
+    // closure body goes here
+}
+```
+```
+Excerpt From: Apple Inc. “The Swift Programming Language (Swift 4.0.3).” iBooks. https://itunes.apple.com/in/book/the-swift-programming-language-swift-4-0-3/id881256329?mt=11"
+```
 
+Now lets implement the capture list to our problem:
+```swift
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+class Office{
+    
+    let stuffNumber: Int
+    
+    lazy var totalLunchPackage: () -> Int = {
+        
+        [unowned self] in
+        return self.stuffNumber
+    }
+    
+    init(totalNumberOfStuff stuffNumber:Int) {
+        
+        self.stuffNumber = stuffNumber
+    }
+    
+    deinit {
+        
+        print("Office deinitialized")
+    }
+}
+
+var officeX: Office?
+
+officeX = Office(totalNumberOfStuff: 10)
+
+if let officeX = officeX {
+    
+    print(officeX.totalLunchPackage)
+}
+
+officeX = nil
+```
+`Office deinitialized` been printed. So the `deinit` was called.
+
+All because of the courtesy of `[unowned self]`. By defining `self` as `unowned` on the `closure`, `totalLunchPackage`, we are setting a weak relationship among `closure` and `self`. Now the `totalLunchPackage` will not hold a strong reference of `self`. 
