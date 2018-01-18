@@ -45,11 +45,11 @@ Point to be noted: Both `class` and `closure` are reference typed. So assigning 
 
 As a result we have a strong reference cycle. Two strong references are keeping each other alive. 
 
-From The Swift Programming Language:
 ```
 If you assign a closure to a property of a class instance, and the closure captures that instance by referring to the instance or its members, you will create a strong reference cycle between the closure and the instance.”
 
 Excerpt From: Apple Inc. “The Swift Programming Language (Swift 4.0.3).” iBooks. 
 ```
 
-[unowned self on closure](<script src="https://gist.github.com/shadmazumder/975badc4d6b01b17b69727c81066c0ba.js"></script>)
+### Solution: Capture List
+
