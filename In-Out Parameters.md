@@ -2,7 +2,7 @@
 - modifying the value of a parameter.
 - persistant change of value for a parameter, after the corresponding function call has ended.
 
-**Can't ** 
+**Can not ** 
 + be used on a `constant` or `literal value`. 
 + can't have `default value`. 
 + `variadic parameters` can't be marked as `In-Out Parameters`
