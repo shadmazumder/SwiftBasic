@@ -1,8 +1,8 @@
 **`In-Out Parameters` is used** on a `functuion` for the following case:
-- modifying the value of a parameter.
-- persistant change of value for a parameter, after the corresponding function call has ended.
++ modifying the value of a parameter.
++ persistant change of value for a parameter, after the corresponding function call has ended.
 
-**Can not ** 
+**Can not** 
 + be used on a `constant` or `literal value`. 
 + can't have `default value`. 
 + `variadic parameters` can't be marked as `In-Out Parameters`
