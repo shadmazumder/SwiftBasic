@@ -3,4 +3,6 @@
 + Controll flow
 + Functuin
 + Closures
-+ Enumerations, current reading
++ Enumerations
++ Class structure, on hold
++ Properties, currently reading
