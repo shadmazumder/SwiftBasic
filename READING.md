@@ -2,4 +2,5 @@
 + Collection types
 + Controll flow
 + Functuin
-+ Closures, current reading
++ Closures
++ Enumerations, current reading
