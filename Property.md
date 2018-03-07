@@ -17,7 +17,7 @@ struct SimpleStruct{
 
 ## Computed Property:
 Provided by all `class`, `struct` and `enum`. Usually doesn't store value rather provide a `getter` and an optional `setter`,
-to set other property or variable indirectly.
+to set the other property or variable indirectly.
 Variable(`var`) computed property only.
 ```swift
 struct SimpleStruct{
