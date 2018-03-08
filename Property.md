@@ -95,6 +95,6 @@ class ChildClass: ParentClass{
     }
 }
 
-ParentClass.computedProperty
-ChildClass.computedProperty
+ParentClass.computedProperty //prints out: 4
+ChildClass.computedProperty //prints out: 6
 ```
