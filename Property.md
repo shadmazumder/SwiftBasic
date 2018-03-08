@@ -126,3 +126,13 @@ smplStruct.storeProperty = 4
 ```
 
 ### Lazy Stored Property
+For Lazy stored property the initial value is not calculated untill the first use. `lazy` modifier is added as a prefix before a `var`.
+
+Reason to use:
++ As the var's initialization is dependent on some other factor/s, that are not know at init time.
++ Expensive setup for the var, should not be preformed unless required.
+
+Note:
+“If a property marked with the lazy modifier is accessed by multiple threads simultaneously and the property has not yet been initialized, there is no guarantee that the property will be initialized only once.”
+
+Excerpt From: Apple Inc. “The Swift Programming Language (Swift 4.0.3).” iBooks. 
