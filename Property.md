@@ -2,7 +2,7 @@ Property associate values with specific Class, Structure, or Enumeration.
 
 Property can be categorised as 
 + `instance property`, property of an instance of a type.
-+ `type property`, property of a type itself. One copy for all the instances of that type. Need to have a default value for stored property as type itself does not have a initializer.
++ `type property`, property of a type itself. One copy for all the instances of that type. Need to have a default value for stored property as, type itself does not have a initializer.
 
 Both `instance property` and `type property` have two types:
 - `Stored property`, Only provided by `class` and `struct`. Can be variable(`var`) or constant(`let`) store property.
