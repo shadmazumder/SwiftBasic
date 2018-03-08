@@ -4,6 +4,5 @@
 + Functuin
 + Closures
 + Enumerations
-+ Class structure, on hold
++ Class structure, currently reading
 + Properties
-+ Type, currently reading
