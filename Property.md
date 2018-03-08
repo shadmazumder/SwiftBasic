@@ -98,3 +98,31 @@ class ChildClass: ParentClass{
 ParentClass.computedProperty //prints out: 4
 ChildClass.computedProperty //prints out: 6
 ```
+
+### Property Observer, `willSet` `didSet`
+Responses to the changes of value for a property, even for the same value. Not applicable for `Lazy Stored Property`. 
+
+```swift
+//: Playground - noun: a place where people can play
+
+import Foundation
+
+struct SimpleStruct{
+    
+    var storeProperty: Int {
+        
+        didSet{
+            print("didSet \(oldValue)") //prints out: 2
+        }
+        
+        willSet{
+            print("willSet \(newValue)") //prints out: 4
+        }
+    }
+}
+
+var smplStruct = SimpleStruct(storeProperty: 2)
+smplStruct.storeProperty = 4
+```
+
+### Lazy Stored Property
