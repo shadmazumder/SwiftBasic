@@ -7,4 +7,5 @@
 + Class structure
 + Properties
 + Methods
-+ Subscripts, currently reading
++ Subscripts
++ Inheritance, currently reading
