@@ -4,5 +4,6 @@
 + Functuin
 + Closures
 + Enumerations
-+ Class structure, currently reading
++ Class structure
 + Properties
++ Methods, currently reading
