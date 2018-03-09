@@ -8,4 +8,5 @@
 + Properties
 + Methods
 + Subscripts
-+ Inheritance, currently reading
++ Inheritance
++ Initialization, currently reading
