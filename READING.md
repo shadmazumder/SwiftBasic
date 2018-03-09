@@ -6,4 +6,5 @@
 + Enumerations
 + Class structure
 + Properties
-+ Methods, currently reading
++ Methods
++ Subscripts, currently reading
