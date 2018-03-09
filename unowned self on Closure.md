@@ -33,7 +33,7 @@ officeX = Office(totalNumberOfStuff: 10)
 
 if let officeX = officeX {
     
-    print(officeX.totalLunchPackage)
+    print("\(officeX.totalLunchPackage())")
 }
 
 officeX = nil
@@ -98,7 +98,7 @@ officeX = Office(totalNumberOfStuff: 10)
 
 if let officeX = officeX {
     
-    print(officeX.totalLunchPackage)
+    print("\(officeX.totalLunchPackage())")
 }
 
 officeX = nil
