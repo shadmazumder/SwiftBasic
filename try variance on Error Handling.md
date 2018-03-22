@@ -122,6 +122,6 @@ func validate(name: String?) throws{
 }
 
 printMyName(name: "Some Name")
-printMyName(name: "")
-printMyName(name: nil)
+printMyName(name: "") // will crash the app. error: Execution was interrupted, reason: EXC_BAD_INSTRUCTION 
+printMyName(name: nil) // will also crash the app. error: Execution was interrupted, reason: EXC_BAD_INSTRUCTION 
 ```
