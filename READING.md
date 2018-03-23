@@ -9,4 +9,5 @@
 + Methods
 + Subscripts
 + Inheritance
-+ Initialization, currently reading
++ Initialization
++ Deinitialization, currently reading
