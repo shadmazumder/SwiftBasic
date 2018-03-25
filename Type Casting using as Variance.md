@@ -1,5 +1,5 @@
 Type casting is to convert one type of object to another. Has two kinds; UpCast and DownCast. UpCast is to convert child into 
-parent. On the other hand DownCast is to convert parent into child.
+parent. On the other hand DownCast is to convert parent into child. `as?` or `as!` is the *type cast operator*
 
 [Sample hierarchy](http://what-when-how.com/wp-content/uploads/2011/08/tmp125_thumb.jpg)
 
