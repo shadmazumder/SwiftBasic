@@ -12,4 +12,5 @@
 + Initialization
 + Deinitialization
 + Optional Channing
-+ Error Handling, currently reading
++ Error Handling
++ Type casting, currently reading
