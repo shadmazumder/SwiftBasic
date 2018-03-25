@@ -10,4 +10,6 @@
 + Subscripts
 + Inheritance
 + Initialization
-+ Deinitialization, currently reading
++ Deinitialization
++ Optional Channing
++ Error Handling, currently reading
