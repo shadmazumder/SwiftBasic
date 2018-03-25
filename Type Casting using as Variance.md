@@ -57,3 +57,13 @@ let childButton = labelView as! UIButton
 childButton.tintColor //error: Execution was interrupted, reason: signal SIGABRT.
 ```
 
+**`is`**
+`is` is the *type check operator*.
+```swift
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+let valid = label is UIView // true
+```
