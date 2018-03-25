@@ -51,7 +51,7 @@ printMyName(name: "Some Name") //Prints: Finally my name is: Some Name
 ```
 
 # `try?`
-`try?` is like optional unwrapping. If the called method after the `try?` throws an error then it will just ignore the error and will continue for the next statement.
+`try?` will convert an error to an optional type. If the called method after the `try?` throws an error then it will just ignore the error and will continue for the next statement.
 
 ```swift
 //: Playground - noun: a place where people can play
