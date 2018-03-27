@@ -99,6 +99,11 @@ ParentClass.computedProperty //prints out: 4
 ChildClass.computedProperty //prints out: 6
 ```
 
+### Difference between `static` `class` and `final` property
+Value type(`struct` and `enum`) can only use `static`. Reference type, aka `class`, can use `static`, `class` and `final` property. The following difference is for `class` type only:
++ `static` property can not be override by subclass type. However `class` property can be overridden by the subclass type.
++ `final` will be used only for the instance of a `class` type. `final` property can not be overridden by the instance of a subclass type.
+
 ### Property Observer, `willSet` `didSet`
 Responses to the changes of value for a property, even for the same value. Not applicable for `Lazy Stored Property`. 
 
