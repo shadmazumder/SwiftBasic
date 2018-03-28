@@ -13,4 +13,5 @@
 + Deinitialization
 + Optional Channing
 + Error Handling
-+ Type casting, currently reading
++ Type casting
++ Nested Types, currently reading
