@@ -11,6 +11,6 @@ let someInt = 10
 Types without a name. Compound types are `fun` and `tuple`. Can contain Name types and/or compound types.
 ```swift
 let sampleTupple: (Int, (String, Bool)) // The (Int, (String, Bool)) itself is a compound type
-func someFunc(param: Int, anotherParam: Int)-Bool {}
+func someFunc(param: Int, anotherParam:Int) -> Bool { return true}
 ```
 
