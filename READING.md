@@ -15,4 +15,5 @@
 + Error Handling
 + Type casting
 + Nested Types
-+ Extension, currently reading
++ Extension
++ Protocol, currently reading
