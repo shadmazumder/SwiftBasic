@@ -16,4 +16,5 @@
 + Type casting
 + Nested Types
 + Extension
-+ Protocol, currently reading
++ Protocol
++ Generics, currently reading
