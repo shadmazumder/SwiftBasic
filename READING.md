@@ -17,4 +17,5 @@
 + Nested Types
 + Extension
 + Protocol
-+ Generics, currently reading
++ Generics
++ Automatic Reference Counting, currently reading
