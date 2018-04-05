@@ -18,4 +18,5 @@
 + Extension
 + Protocol
 + Generics
-+ Automatic Reference Counting, currently reading
++ Automatic Reference Counting
++ Memory Safety, currently reading
