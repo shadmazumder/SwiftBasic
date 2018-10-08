@@ -1,3 +1,5 @@
+A little bit more updated version can be found on [mobidevtalk](https://mobidevtalk.com/2018/10/09/type-casting-using-as-variance/)
+
 Type casting is to convert one type of instance to another. Has two kinds; UpCast and DownCast. UpCast is to convert child into 
 parent. On the other hand DownCast is to convert parent into child. `as?` or `as!` is the *type cast operator*
 
