@@ -1,5 +1,5 @@
 
-In Swift errors are represented by the value-types confirming `Error` protocol. There are four ways to handle error on Swift.
+In Swift errors are represented by any-type that conforms `Error` protocol. There are four ways to handle error on Swift.
 # Propagation
 Propagating the error on a function to that function's caller. On the next example `func validate(name: String?) throws` is propagating the error to its caller `func printMyName(name: String?)`
 
